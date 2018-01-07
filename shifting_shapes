@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=UTF-8>
+<title>Hello World</title>
+<style type="text/css">
+
+#container{
+position:relative;
+top:100px;
+	font-size: 0;
+	margin-right: auto;
+	margin-left: auto;
+	width: 600px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #B03060;
+	height:400px;
+}
+	
+
+.box{
+	display: inline-block;
+	position:relative;
+	width: 220px;
+	height: 150px;
+	background-color: #81BBC9;
+	border-radius:10px;
+	font-size: 35px;
+	text-align: center;
+	margin:10px;
+    }
+
+    #box1{
+top:30px; left:30px;
+    }
+    #box2{top:30px; right: 30px}
+    #box3{bottom:30px; left: 30px;
+    }
+#box4{bottom:30px; right: 30px;}
+</style>
+</head>
+<body>
+<div id="container">
+<div id="box1" class ="box"><p> Box 1</p>
+</div>
+<div id="box2" class ="box"><p> Box 2</p>
+</div>
+<div id="box3" class ="box"><p> Box 3</p>
+</div>
+<div id="box4" class ="box"><p> Box 4</p></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>image positioning</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<style>
+body{
+	font-family: roboto;
+background-image: url(imgs/pugvsbee.jpg);
+background-size:cover;
+background-size: contain;
+}
+div{vertical-align: top;
+			display: inline-block;
+			width:500px;
+			margin:0 auto 0 auto;
+			background-color: #99CCFF;
+			padding: 20px;
+			border:2px solid black;
+			border-radius: 10px;}
+img{float:right;
+margin: 0 20px 20px 20px;
+border: 2px solid black}
+.top1{-webkit-filter:sepia(1);}
+.top2{-webkit-filter:grayscale(1);}
+.bottom1{-webkit-filter:contrast(1);}
+.bottom2{-webkit-filter:hue-rotate(90deg) blur(2px) opacity(0.8);}
+
+</style>
+</head>
+<body>
+<div>
+	<h2>Lorem Ipsum</h2>
+	<video height="250px" width="250px" controls="controls" autoplay preload="auto" poster="imgs/arrow.png">
+		  <source src="video/Rabbit_MP4.mp4" type="video/mp4"/>
+    <source src="video/Rabbit_OGV.ogv" type="video/ogv"/>
+    <source src="video/Rabbit_WEBM.webm" type="video/webm"/>
+	</video>
+</div>
+<div>
+	<h2>Lorem Ipsum</h2>
+	<img src="imgs/twitter-sas.jpeg" class="top2" alt="an image" width="250" height="250" float="right"/>
+</div>
+<div>
+	<h2>Lorem Ipsum</h2>
+	<img src="imgs/twitter-sas.jpeg" class="bottom1" alt="an image" width="250" height="250" float="left"/>
+</div>
+<div>
+	<h2>Lorem Ipsum</h2>
+	<audio height="250px" width="250px" controls="controls" autoplay preload="auto" loop >
+		  <source src="audio/Homicide.mp3" type="audio/mp3"/>
+    <source src="audio/Homicide.ogg" type="audio/ogg"/>
+    	</audio>
+</div>
+</body>
+</html>

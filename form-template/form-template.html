@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="UTF-8">
+      <title>Form</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+   
+      <!--
+         Form with HTML5 tags and basic CSS
+      -->
+      <style type="text/css">
+
+      body{
+         font-family: 'Roboto', sans-serif;
+      }
+         #container{
+            width: 550px;
+            margin: auto;
+
+         }
+
+         legend{
+            font-size: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+         }
+            
+         label.field{
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+
+         }
+         input{
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+         }
+         .field{
+            padding: 6px 8px;
+         }
+
+         #currency{
+             width: 220px;
+             border-radius: 5px;
+             padding: 6px 8px;
+         }
+
+         fieldset{
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color:rgba(129, 187, 201,.2);
+
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+        <form>
+         <fieldset>
+            <legend> Registration </legend>
+         First Name: <input type="Text" name="First Name" placeholder="Type First name" required="">
+         <br>
+         Password: <input type="Password" name="Password" placeholder="Create password of 5-8 characters with a symbol and mixed capitalisation">
+         <br>
+         Email: <input type="Email" name="Email" placeholder="input preferred email address for contact" required="" autofocus="">
+         <br>
+         Passport: <input type="text" name="Passport" pattern="[0-9]{7}[A-Za-z]{1}">
+         Tel: <input type="Tel" name="Telephone">
+         <br>
+         Post Code: <input type="" pattern="[A-Z]{2}[0-99]{2}A-Z]{2}" name="Post Code">
+         Website: <input type="url" name="Website">
+         Age: <input type="number" min="13" max="200" name="Age">
+         Credit Card: <input type="number" name="Card no">
+         Date: <input type="checkbox">
+         Radio:  <label><input type="radio" name="gender" value="Male"> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+            <label><input type="radio" name="gender" value="Other"> Other</label>
+</fieldset>
+      </form>
+    </div>
+   </body>
+
+</html>
